@@ -31,7 +31,7 @@ export default function Signup() {
     <Container showPassword={showPassword}>
         <BackgroundImage />
         <div className="content">
-          <Header login/>
+          <Header Login/>
           <div className="body flex column a-center j-center">
               <div className="text flex column">
                   <h1>Learn to code by watching others</h1>
