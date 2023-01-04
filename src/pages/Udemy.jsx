@@ -1,9 +1,17 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
-export default function App() {
+export default function Udemy() {
+  const [isScorlled, setIsScrolled] = React.useState(false);
+
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset === 0 ? false : true);
+    return () => (window.onscroll = null);
+  };
   return (
     <div>
-      <h1>My First React App</h1>
+      
+      <Navbar isScorlled={isScorlled} />
     </div>
   );
 }
